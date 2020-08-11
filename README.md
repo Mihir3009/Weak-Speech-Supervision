@@ -21,7 +21,7 @@ If you use this implementation idea in your research or industrial work, please 
 @article{WSS2020,
 	title = {Weak Speech Supervision: A case study of Dysarthria Severity Classification},
 	author = {Mirali Purohit and Mihir Parmar and Maitreya Patel and Harshit Malaviya and Hemant A. Patil},
-	booktitle={$28^{th}$ European Signal Processing Conference (EUSIPCO)},
+	booktitle={$$28^{th}$$ European Signal Processing Conference (EUSIPCO)},
 	year = {2020},
 	Address = {Amsterdam, Netherlands}
 }
