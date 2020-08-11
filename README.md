@@ -10,19 +10,20 @@ A first-of-its-kind system in speech domain that helps users to train state-of-t
 <a name="intro"></a>
 ## Introduction
 
-A large amount of labeled data is the largest bottleneck in the deployment of deep learning-based classification systems including speech area. It is know that hand-labeling training data is an intensively laborious task even for the speech domain. To overcome this problems, we introduce a new paradigm "Weak Speech Supervision" first time in speech domain to produce a labeled data without user intervention, and utilize this data to improve perfomance of classifiers in various speech domain.
+A huge amount of labeled data is the largest bottleneck in the deployment of deep learning-based classification systems including speech area. It is know that hand-labeling training data is an intensively laborious task even for the speech domain. To overcome this problems, we introduce a new paradigm "Weak Speech Supervision" first time in speech domain to produce a labeled data without user intervention, and utilize this data to improve perfomance of classifiers in various speech domain.
 
 <a name="cite"></a>
 ## Citation
 
-If you use these implementation idea in your research or industrial work, please cite:
+If you use this implementation idea in your research or industrial work, please cite:
 
 ```
 @article{WSS2020,
-	author = {Mirali Purohit and Mihir Parmar and Maitreya Patel and Harshit Malaviya and Hemant A. Patil},
 	title = {Weak Speech Supervision: A case study of Dysarthria Severity Classification},
-	journal = {EUSIPCO},
-	year = {2020}
+	author = {Mirali Purohit and Mihir Parmar and Maitreya Patel and Harshit Malaviya and Hemant A. Patil},
+	booktitle={$28^{th}$ European Signal Processing Conference (EUSIPCO)},
+	year = {2020},
+	Address = {Amsterdam, Netherlands}
 }
 ```
 <a name="implement"></a>
