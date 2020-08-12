@@ -29,7 +29,7 @@ If you use this implementation idea in your research or industrial work, please 
 <a name="implement"></a>
 ## Implementation
 
-### OuickStart
+### QuickStart
 
 To use the implemented GA for Richardson arm race model, please use following cmd to clone the code:
 
