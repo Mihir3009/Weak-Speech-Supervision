@@ -44,3 +44,13 @@ $ git clone https://github.com/Mihir3009/genetic-algorithm.git
 ```
 $ pip3 install -r requirements.txt
 ```
+
+For implementation follow the following 4 steps:
+
+### Define weak label:
+To define the weak label in this reserch work we have used energy-based parameter:
+
+1. To generate the weak labels for the unlabeled dataset - python3 energy_extractor.py -wave_file_path ../path/of/the/unlabeled/dataset/wavefiles
+
+### Feature extraction:
+To extract the feature of the weak generated data and original data run the following script
