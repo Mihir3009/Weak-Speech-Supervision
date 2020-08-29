@@ -52,7 +52,7 @@ To define the weak label in this reserch work we have used energy-based paramete
 
 1. To generate the weak labels for the unlabeled dataset -
 ```
-python3 energy_extractor.py -wave_file_path ../path/of/the/unlabeled/dataset/wavefiles
+$ python3 energy_extractor.py -wave_file_path ../path/of/the/unlabeled/dataset/wavefiles
 ```
 
 ### Feature extraction:
@@ -60,5 +60,19 @@ In training and testing, Mel Cepstral Coefficient (MCC) features are used for or
 
 2. To extract the feature from the weak generated data and original data run the following script:
 ```
-$ 
+$ ./feature_extraction.sh ../path/of/the/wavfile/folder ../path/where/to/save/the/features ../path/of/any/empty/directory
+```
+
+### Training
+In the training we utilize the weakly labeled data for the severity-based binary classification of dysarthric speech.
+
+3. For training run the following command -
+```
+$ python3 main.py --data_dir ../path/of/the/training_data --output_dir ../path/where/to/save/the/checkpoint --do_train yes
+```
+
+### Testing
+4. For testing run the following command -
+```
+$ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/where/to/save/the/checkpoint --do_test yes
 ```
