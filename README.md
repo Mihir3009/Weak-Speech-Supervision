@@ -31,7 +31,7 @@ If you use this implementation idea in your research or industrial work, please 
 
 ### QuickStart
 
-To use the implemented GA for Richardson arm race model, please use following cmd to clone the code:
+To use the implemented Weak Speech Supervision Model model, please use following cmd to clone the code:
 
 ```
 $ git clone https://github.com/Mihir3009/Weak-Speech-Supervision
@@ -47,32 +47,32 @@ $ pip3 install -r requirements.txt
 
 For implementation follow the following 4 steps:
 
-### Define weak label:
-To define the weak label in this reserch work we have used energy-based parameter:
+### Generate weak label:
+To generate weak labels for your unlabeled data, you need to write weak rules. In this reserch work, we have used energy-based parameter to label the unlabeled dysarthric wav files. You can use our predefine weak rule.
 
-1. To generate the weak labels for the unlabeled dataset -
+1. To generate weak labels for the unlabeled dataset -
 ```
 $ python3 energy_extractor.py -wave_file_path ../path/of/the/unlabeled/dataset/wavefiles
 ```
 
 ### Feature extraction:
-In training and testing, Mel Cepstral Coefficient (MCC) features are used for original as well as weka data. In feature extraction, the MCC from wavfile [AHOCODER](https://aholab.ehu.eus/ahocoder/info.html) is used.
+In training and testing, Mel Cepstral Coefficient (MCC) are used as features for original (i.e., labeled) as well as weakly labeled data. To extract features (i.e., MCC) from wavfile, [AHOCODER](https://aholab.ehu.eus/ahocoder/info.html) is used.
 
-2. To extract the feature from the weak generated data and original data run the following script:
+2. To extract the feature from the labeled and weakly generated data, run the following script:
 ```
 $ ./feature_extraction.sh ../path/of/the/wavfile/folder ../path/where/to/save/the/features ../path/of/any/empty/directory
 ```
 
 ### Training
-In the training we utilize the weakly labeled data for the severity-based binary classification of dysarthric speech.
+In the training, we utilize the weakly labeled data for the severity-based binary classification of dysarthric speech. You can see schematic representation of our training procedure below. 
 
 3. For training run the following command -
 ```
-$ python3 main.py --data_dir ../path/of/the/training_data --output_dir ../path/where/to/save/the/checkpoint --do_train yes
+$ python3 main.py --data_dir ../path/of/the/training_data --output_dir ../path/where/to/save/the/checkpoint --do_train
 ```
 
 ### Testing
-4. For testing run the following command -
+4. For testing the model, run the following command -
 ```
-$ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/where/to/save/the/checkpoint --do_test yes
+$ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/where/to/save/the/checkpoint --do_test
 ```
