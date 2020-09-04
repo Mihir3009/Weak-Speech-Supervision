@@ -64,7 +64,9 @@ $ ./feature_extraction.sh ../path/of/the/wavfile/folder ../path/where/to/save/th
 ```
 
 ### Training
-In the training, we utilize the weakly labeled data for the severity-based binary classification of dysarthric speech. You can see schematic representation of our training procedure below. 
+In the training, we utilize the weakly labeled data for the severity-based binary classification of dysarthric speech. You can see schematic representation of our training procedure below.
+
+![weak_figure_final_4-Page-7](https://user-images.githubusercontent.com/47143544/92290254-567b1c00-eec8-11ea-9ddf-048a47aa8486.jpeg)
 
 3. For training run the following command -
 ```
@@ -76,3 +78,5 @@ $ python3 main.py --data_dir ../path/of/the/training_data --output_dir ../path/w
 ```
 $ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/where/to/save/the/checkpoint --do_test
 ```
+<a name="summary"></a>
+## Conclusion
