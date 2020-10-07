@@ -47,7 +47,7 @@ $ pip3 install -r requirements.txt
 
 For implementation follow the following 4 steps:
 
-### Generate weak label:
+### Generate weak label
 To generate weak labels for your unlabeled data, you need to write weak rules. In this reserch work, we have used energy-based parameter to label the unlabeled dysarthric wav files. You can use our predefine weak rule.
 
 1. To generate weak labels for the unlabeled dataset -
@@ -55,8 +55,8 @@ To generate weak labels for your unlabeled data, you need to write weak rules. I
 $ python3 energy_extractor.py -wave_file_path ../path/of/the/unlabeled/dataset/wavefiles
 ```
 
-### Feature extraction:
-In training and testing, Mel Cepstral Coefficient (MCC) are used as features for original (i.e., labeled) as well as weakly labeled data. To extract features (i.e., MCC) from wavfile, [AHOCODER](https://aholab.ehu.eus/ahocoder/info.html) is used.
+### Feature extraction
+In training and testing, Mel Cepstral Coefficient (MCC) are used as features for original (i.e., labeled) as well as weakly labeled data. To extract features (i.e., MCC) from wavfile, [AHOCODER](https://aholab.ehu.eus/ahocoder/info.html) is used. For feature extraction, download the .exe/executable file of AHOCODER from [here](https://aholab.ehu.eus/ahocoder/info.html).
 
 2. To extract the feature from the labeled and weakly generated data, run the following script:
 ```
