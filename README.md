@@ -78,5 +78,10 @@ $ python3 main.py --data_dir ../path/of/the/training_data --output_dir ../path/w
 ```
 $ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/where/to/save/the/checkpoint --do_test
 ```
+
 <a name="summary"></a>
 ## Conclusion
+
+For more, you can read the blog - 
+
+Also, you can refer our publication in EUSIPCO 2020 by on this [link](https://drive.google.com/file/d/1L-UWr23O_sFBI43Pe_-cbJZajHdzWXOo/view).
