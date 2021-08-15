@@ -82,6 +82,6 @@ $ python3 main.py --data_dir ..path/of/the/testing_data --output_dir ../path/whe
 <a name="summary"></a>
 ## Conclusion
 
-For more, you can read the blog - 
+For more, you can read the blog - [Weak Speech Supervision (WSS): Make Your Small Data Speaks](https://medium.com/ml-brew/weak-speech-supervision-wss-make-your-small-data-speaks-d696b278cdf6)
 
-Also, you can refer our publication in EUSIPCO 2020 by on this [link](https://drive.google.com/file/d/1L-UWr23O_sFBI43Pe_-cbJZajHdzWXOo/view).
+Also, you can refer our publication in EUSIPCO 2020 by on this [link](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9287502&casa_token=PhP-87YuZq0AAAAA:8diQ1Yu0GXAyTqCr6j8ll-zKpLHYQgCtk5fTv77ciXH5FxJXMyInCZPy8SYZ_YkUls6Z3i06y468&tag=1).
